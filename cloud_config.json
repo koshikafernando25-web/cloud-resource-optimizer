@@ -1,0 +1,11 @@
+{
+  "cloud_provider": "Amazon Web Services (Simulated)",
+  "target_region": "us-east-1",
+  "auth_status": "AUTHENTICATED_SECURE_TOKEN",
+  "virtual_servers": [
+    {"id": "i-0a123bc456de78f9a", "name": "Production-Web-01", "type": "t3.medium", "status": "running", "uptime_hours": 142},
+    {"id": "i-0b987654321fedcba", "name": "Staging-API-Gateway", "type": "t3.small", "status": "running", "uptime_hours": 24},
+    {"id": "i-0c555aaa666bbb777", "name": "Legacy-Testing-Sandbox", "type": "m5.large", "status": "running", "uptime_hours": 310},
+    {"id": "i-0d888ccc999ddd111", "name": "Backup-Database-Mirror", "type": "r5.xlarge", "status": "stopped", "uptime_hours": 0}
+  ]
+}
