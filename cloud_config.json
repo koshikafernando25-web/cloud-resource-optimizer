@@ -1,11 +1,127 @@
 {
-  "cloud_provider": "Amazon Web Services (Simulated)",
-  "target_region": "us-east-1",
-  "auth_status": "AUTHENTICATED_SECURE_TOKEN",
-  "virtual_servers": [
-    {"id": "i-0a123bc456de78f9a", "name": "Production-Web-01", "type": "t3.medium", "status": "running", "uptime_hours": 142},
-    {"id": "i-0b987654321fedcba", "name": "Staging-API-Gateway", "type": "t3.small", "status": "running", "uptime_hours": 24},
-    {"id": "i-0c555aaa666bbb777", "name": "Legacy-Testing-Sandbox", "type": "m5.large", "status": "running", "uptime_hours": 310},
-    {"id": "i-0d888ccc999ddd111", "name": "Backup-Database-Mirror", "type": "r5.xlarge", "status": "stopped", "uptime_hours": 0}
+  "last_updated": "2026-06-22T08:00:00Z",
+  "organization": "Acme Corp",
+  "cloud_provider": "AWS",
+  "instances": [
+    {
+      "instance_id": "i-0a1b2c3d4e5f60001",
+      "instance_name": "prod-api-server-01",
+      "instance_type": "m5.xlarge",
+      "environment": "Production",
+      "status": "running",
+      "uptime_hours": 720.5,
+      "avg_cpu_utilization_pct": 67.4,
+      "hourly_cost_usd": 0.192,
+      "region": "us-east-1",
+      "owner": "platform-team"
+    },
+    {
+      "instance_id": "i-0a1b2c3d4e5f60002",
+      "instance_name": "Testing-backend-v2",
+      "instance_type": "t3.large",
+      "environment": "Testing",
+      "status": "running",
+      "uptime_hours": 312.0,
+      "avg_cpu_utilization_pct": 3.1,
+      "hourly_cost_usd": 0.0832,
+      "region": "us-east-1",
+      "owner": "dev-team"
+    },
+    {
+      "instance_id": "i-0a1b2c3d4e5f60003",
+      "instance_name": "Sandbox-ml-experiment",
+      "instance_type": "m5.2xlarge",
+      "environment": "Sandbox",
+      "status": "running",
+      "uptime_hours": 168.0,
+      "avg_cpu_utilization_pct": 8.7,
+      "hourly_cost_usd": 0.384,
+      "region": "us-west-2",
+      "owner": "data-science"
+    },
+    {
+      "instance_id": "i-0a1b2c3d4e5f60004",
+      "instance_name": "prod-db-primary",
+      "instance_type": "r5.large",
+      "environment": "Production",
+      "status": "running",
+      "uptime_hours": 2160.0,
+      "avg_cpu_utilization_pct": 45.2,
+      "hourly_cost_usd": 0.126,
+      "region": "us-east-1",
+      "owner": "dba-team"
+    },
+    {
+      "instance_id": "i-0a1b2c3d4e5f60005",
+      "instance_name": "dev-frontend-build",
+      "instance_type": "t3.medium",
+      "environment": "Development",
+      "status": "stopped",
+      "uptime_hours": 0.0,
+      "avg_cpu_utilization_pct": 0.0,
+      "hourly_cost_usd": 0.0416,
+      "region": "us-east-1",
+      "owner": "frontend-team"
+    },
+    {
+      "instance_id": "i-0a1b2c3d4e5f60006",
+      "instance_name": "Sandbox-data-pipeline",
+      "instance_type": "c5.xlarge",
+      "environment": "Sandbox",
+      "status": "running",
+      "uptime_hours": 89.5,
+      "avg_cpu_utilization_pct": 11.3,
+      "hourly_cost_usd": 0.17,
+      "region": "eu-west-1",
+      "owner": "analytics-team"
+    },
+    {
+      "instance_id": "i-0a1b2c3d4e5f60007",
+      "instance_name": "prod-worker-node-03",
+      "instance_type": "c5.2xlarge",
+      "environment": "Production",
+      "status": "running",
+      "uptime_hours": 504.0,
+      "avg_cpu_utilization_pct": 72.1,
+      "hourly_cost_usd": 0.34,
+      "region": "us-east-1",
+      "owner": "platform-team"
+    },
+    {
+      "instance_id": "i-0a1b2c3d4e5f60008",
+      "instance_name": "Testing-load-balancer",
+      "instance_type": "t3.large",
+      "environment": "Testing",
+      "status": "running",
+      "uptime_hours": 55.0,
+      "avg_cpu_utilization_pct": 6.2,
+      "hourly_cost_usd": 0.0832,
+      "region": "us-east-1",
+      "owner": "qa-team"
+    },
+    {
+      "instance_id": "i-0a1b2c3d4e5f60009",
+      "instance_name": "backup-archive-node",
+      "instance_type": "t3.small",
+      "environment": "Production",
+      "status": "stopped",
+      "uptime_hours": 0.0,
+      "avg_cpu_utilization_pct": 0.0,
+      "hourly_cost_usd": 0.0208,
+      "region": "us-east-1",
+      "owner": "ops-team"
+    },
+    {
+      "instance_id": "i-0a1b2c3d4e5f60010",
+      "instance_name": "Sandbox-gpu-training",
+      "instance_type": "p3.2xlarge",
+      "environment": "Sandbox",
+      "status": "running",
+      "uptime_hours": 204.0,
+      "avg_cpu_utilization_pct": 9.8,
+      "hourly_cost_usd": 3.06,
+      "region": "us-east-1",
+      "owner": "ml-team"
+    }
   ]
 }
